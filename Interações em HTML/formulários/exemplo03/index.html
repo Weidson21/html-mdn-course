@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        label{
+            display: block;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .field{
+            margin: 1px;
+            padding: 1px;
+        }
+
+        input:invalid{
+            background-color: #ffdddd;
+        }
+
+        form:invalid{
+            border: 5px solid #ffdddd;
+        }
+
+        input:valid{
+            background-color: #ddffdd;
+        }
+
+        form:valid{
+            border: 5px solid #ddffdd;
+        }
+
+        input:required{
+            border-color: maroon;
+            border-width: 3px;
+        }
+
+        input:required:invalid{
+            border-color: #c00000;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <p class="field">
+            <label for="url_input">Enter a URL:</label>
+            <input type="url" name="url" id="id_input">
+        </p>
+
+        <p class="field">
+            <label for="email_input">Enter an email address:</label>
+            <input type="email" name="email" id="email_input" required>
+        </p>
+    </form>
+</body>
+</html>

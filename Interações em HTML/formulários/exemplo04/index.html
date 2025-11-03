@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        fieldset:invalid ~ fieldset{
+            display: none;
+        }
+
+        form:invalid button{
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        input,textarea{
+            box-sizing: border-box;
+            width: 100%;
+            font-family: monospace;
+            padding: 0.25em 0.5em;
+        }
+
+        button{
+            width: 100%;
+            border: thin solid darkgrey;
+            font-size: 1.25em;
+            background-color: darkgrey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <label for="form-name">Name</label><br>
+            <input type="text" name="name" id="form-name" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="form-email">Email Address</label><br>
+            <input type="email" name="email" id="form-email" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="form-message">Message</label><br>
+            <textarea name="Message" id="form-message" required>
+            </textarea>
+        </fieldset>
+
+            <button type="submit" name="send">Submit</button>
+    </form>
+</body>
+</html>
