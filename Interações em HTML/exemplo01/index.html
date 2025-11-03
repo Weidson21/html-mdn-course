@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interações HTML</title>
+</head>
+<body>
+    <button>Press me</button>
+    <script>
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+            btn.textContent = "YOU CLICKED ME!! ❤️";
+            setTimeout(() =>{
+                btn.textContent = "Press me";
+            }, 1000)
+        })
+    </script>
+</body>
+</html>
